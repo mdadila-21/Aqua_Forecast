@@ -2,39 +2,71 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
+/* Water Forecasting Design System - Eco-themed color palette
 All colors MUST be HSL.
 */
 
 @layer base {
   :root {
-    --background: 0 0% 100%;
-    --foreground: 222.2 84% 4.9%;
+    --background: 210 20% 98%;
+    --foreground: 210 15% 20%;
 
     --card: 0 0% 100%;
-    --card-foreground: 222.2 84% 4.9%;
+    --card-foreground: 210 15% 20%;
 
     --popover: 0 0% 100%;
-    --popover-foreground: 222.2 84% 4.9%;
+    --popover-foreground: 210 15% 20%;
 
-    --primary: 222.2 47.4% 11.2%;
-    --primary-foreground: 210 40% 98%;
+    /* Primary: Deep ocean blue */
+    --primary: 205 87% 29%;
+    --primary-foreground: 210 20% 98%;
+    --primary-light: 205 87% 40%;
+    --primary-dark: 205 87% 20%;
 
-    --secondary: 210 40% 96.1%;
-    --secondary-foreground: 222.2 47.4% 11.2%;
+    /* Secondary: Fresh water green */
+    --secondary: 142 71% 45%;
+    --secondary-foreground: 210 20% 98%;
+    --secondary-light: 142 71% 55%;
+    --secondary-dark: 142 71% 35%;
 
-    --muted: 210 40% 96.1%;
-    --muted-foreground: 215.4 16.3% 46.9%;
+    /* Accent: Bright aqua */
+    --accent: 185 96% 53%;
+    --accent-foreground: 210 15% 20%;
+    --accent-light: 185 96% 63%;
 
-    --accent: 210 40% 96.1%;
-    --accent-foreground: 222.2 47.4% 11.2%;
+    --muted: 210 20% 94%;
+    --muted-foreground: 210 15% 50%;
 
-    --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 210 40% 98%;
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 210 20% 98%;
 
-    --border: 214.3 31.8% 91.4%;
-    --input: 214.3 31.8% 91.4%;
-    --ring: 222.2 84% 4.9%;
+    --border: 210 20% 88%;
+    --input: 210 20% 94%;
+    --ring: 205 87% 29%;
+
+    /* Custom water theme colors */
+    --ocean-deep: 205 87% 29%;
+    --ocean-medium: 205 87% 40%;
+    --ocean-light: 205 87% 60%;
+    --water-fresh: 142 71% 45%;
+    --water-light: 142 71% 55%;
+    --aqua-bright: 185 96% 53%;
+    --aqua-light: 185 96% 63%;
+    --sky-light: 210 100% 95%;
+
+    /* Gradients */
+    --gradient-water: linear-gradient(135deg, hsl(var(--ocean-deep)), hsl(var(--aqua-bright)));
+    --gradient-nature: linear-gradient(135deg, hsl(var(--water-fresh)), hsl(var(--ocean-light)));
+    --gradient-sky: linear-gradient(180deg, hsl(var(--sky-light)), hsl(var(--background)));
+
+    /* Shadows with water theme */
+    --shadow-water: 0 4px 20px hsl(var(--ocean-deep) / 0.15);
+    --shadow-float: 0 8px 32px hsl(var(--ocean-deep) / 0.12);
+    --shadow-glow: 0 0 40px hsl(var(--aqua-bright) / 0.3);
+
+    /* Animations */
+    --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    --transition-bounce: all 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
 
     --radius: 0.5rem;
 

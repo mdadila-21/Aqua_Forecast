@@ -18,6 +18,11 @@ const buttonVariants = cva(
           "bg-secondary text-secondary-foreground hover:bg-secondary/80",
         ghost: "hover:bg-accent hover:text-accent-foreground",
         link: "text-primary underline-offset-4 hover:underline",
+        // Water-themed variants
+        ocean: "bg-gradient-to-r from-ocean-deep to-ocean-medium text-primary-foreground hover:from-ocean-medium hover:to-ocean-light shadow-water transition-all",
+        water: "bg-gradient-to-r from-water-fresh to-secondary-light text-secondary-foreground hover:from-secondary-light hover:to-water-light shadow-water transition-all",
+        aqua: "bg-gradient-to-r from-aqua-bright to-accent-light text-accent-foreground hover:shadow-glow transition-all hover:scale-105",
+        flow: "bg-gradient-to-r from-primary to-secondary text-primary-foreground hover:animate-flow relative overflow-hidden",
       },
       size: {
         default: "h-10 px-4 py-2",
